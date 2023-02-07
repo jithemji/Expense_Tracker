@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expense-tracker, register">
+    <meta name="keywords" content="books, mobile, shopping, Expense-tracker, register">
+    <title>Expense-tracker -Register</title>
+    <link rel="stylesheet" media="screen and (min-width:800px)" href="assets/style.css">
+    <link rel="stylesheet" media="screen and (max-width:799px)" href="assets/style3.css">
+    <!-- <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon"> -->
+</head>
+
+<body>
+    <section class="box">
+        <div class="design">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="form">
+            <h2>Register</h2>
+            <form action="/register" method="POST">
+                <input type="text" name="firstname" class="input-field" pattern=".{1,}" required title="1 characters minimum" placeholder="First Name" />
+                <input type="text" name="lastname" class="input-field" pattern=".{1,}" required title="1 characters minimum" placeholder="Last Name" />
+                <input type="email" name="useremail" class="input-field" pattern=".{3,}" placeholder="Email id" required />
+                <input type="password" name="password" class="input-field" pattern=".{6,12}" required title="6 to 12 characters" placeholder="Password" />
+                <input type="submit" class="btn" value="SUBMIT">
+            </form>
+            <br>
+            <h4>Registered Already <a href="\login"> Log in</a></h4>
+        </div>
+    </section>
+</body>
+
+</html>
